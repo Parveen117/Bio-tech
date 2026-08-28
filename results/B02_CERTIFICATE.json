@@ -1,0 +1,92 @@
+{
+  "B02A_EXACT_IDENTITY_T31": {
+    "events": 36,
+    "max_relative_residual": 4.3781177761219356e-16,
+    "status": "PASS_CONTROL"
+  },
+  "B02B_CONTRACTIVE_LEDGER_T41": {
+    "beta_declared": 0.95,
+    "events": 36,
+    "max_relative_residual": 3.9591696322144755e-16,
+    "status": "PASS_CONTROL"
+  },
+  "B02C_CLEAN_DECODER_ADEQUACY": {
+    "captured_share": 0.9499999999999998,
+    "note": "decoder is the clean response direction scaled to beta=0.95; captured share equals beta and transverse vanishes exactly on the aligned event",
+    "status": "PASS_CONTROL",
+    "transverse_share": 3.410181244289485e-33
+  },
+  "B02D_CONTAMINATION_LOCALIZATION": {
+    "cases": {
+      "BATCH_AGING_2K": {
+        "captured_share": 0.9447970587986285,
+        "dominant_pair": "23",
+        "pair_squares_normalized": {
+          "12": 0.1996734698047051,
+          "13": 1.6331863511769147e-30,
+          "14": 0.00031610588125691115,
+          "23": 0.7986938792188194,
+          "24": 5.2121570191018503e-05,
+          "34": 0.0012644235250276387
+        },
+        "transverse_share": 0.005202941201371311
+      },
+      "COOLING_BRANCH_2p5K": {
+        "captured_share": 0.9439764566113582,
+        "dominant_pair": "23",
+        "pair_squares_normalized": {
+          "12": 0.19825542623818587,
+          "13": 7.322220232110129e-30,
+          "14": 0.0017415862585209228,
+          "23": 0.7930217049527406,
+          "24": 1.4937516469048063e-05,
+          "34": 0.006966345034083675
+        },
+        "transverse_share": 0.0060235433886413675
+      },
+      "M_VALUE_DRIFT_20PC": {
+        "captured_share": 0.948003887695564,
+        "dominant_pair": "23",
+        "pair_squares_normalized": {
+          "12": 0.1991515278406691,
+          "13": 2.2817409897224496e-30,
+          "14": 0.0008476883879883278,
+          "23": 0.7966061113626752,
+          "24": 3.918856713957562e-06,
+          "34": 0.003390753551953311
+        },
+        "transverse_share": 0.001996112304435716
+      },
+      "THERMAL_READOUT_GAIN_20PC": {
+        "captured_share": 0.9499913380240422,
+        "dominant_pair": "34",
+        "pair_squares_normalized": {
+          "12": 2.3154907400115352e-29,
+          "13": 3.7047851840184563e-28,
+          "14": 0.19186370319631674,
+          "23": 0.0,
+          "24": 0.040681484018417285,
+          "34": 0.767454812785266
+        },
+        "transverse_share": 8.661975957499846e-06
+      }
+    },
+    "clean_transverse_share": 3.410181244289485e-33,
+    "note": "every contamination moves response energy into the transverse squares; the dominant pair localizes where the two-state decoder fails. Channel key: 1 folded fraction, 2 excess response, 3 population balance, 4 thermal. Honest finding: the three model-level drifts (Tm aging, cooling branch, m-value) share one fingerprint (dominant pair 23) because they all act through the stability scalar; localization discriminates contamination CLASSES, not individual model-level drifts. The instrument-side thermal-readout gain case shows a distinct fingerprint on the thermal pairs.",
+    "status": "PASS_CONTROL"
+  },
+  "_meta": {
+    "beta_declared": 0.95,
+    "chart_point": {
+      "T_K": 330.0,
+      "c_M": 1.5
+    },
+    "framework_source": "Recognition-Kernel-Framework theorum/thermodynamics/10 (T3.1, T4.1)",
+    "protocol_step": {
+      "dT_K": 0.5,
+      "dc_M": 0.1
+    },
+    "whitening_contract": "pairwise squares computed only after declared diagonal noise-precision metric, per theorem Section 2"
+  },
+  "_pin": "5a25b289a0d875b338c31cda6f5297838634705ca690f806cd6848d02ea80ae9"
+}

@@ -13,4 +13,5 @@ jobs:
       - name: regenerate certificate and diff against pinned
         run: |
           python campaigns/B01_PLUCKER_BIO_RESPONSE/run_b01.py
-          git diff --exit-code results/B01_CERTIFICATE.json
+          python campaigns/B02_CUT_SQUARE_RESPONSE/run_b02.py
+          git diff --exit-code results/B01_CERTIFICATE.json results/B02_CERTIFICATE.json

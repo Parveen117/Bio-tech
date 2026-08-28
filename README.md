@@ -76,6 +76,44 @@ bootstrap confirmation for every rejecting rung. Certificate:
   real signals; the statistic now uses the raw residual with a fixed
   measurement contract.
 
+## Second campaign
+
+`B02_CUT_SQUARE_RESPONSE`
+
+Consumes the Thermodynamic Cut-Square Response Decomposition Theorem
+(Recognition-Kernel-Framework, `theorum/thermodynamics/10`, T3.1/T4.1):
+for a declared decoder `c` with `beta = |c|_H^2 <= 1`, every response
+event `y` splits exactly as
+
+```
+|y|_H^2 = |<c, y>_H|^2  +  (1 - beta)|y|_H^2  +  sum of six pairwise
+          (captured)       (reserve)             transverse squares
+```
+
+with the theorem's whitening contract obeyed: pairwise squares are
+computed only after the declared diagonal noise-precision metric —
+raw channels with unlike units are never wedged.
+
+The bio decoder is the clean two-state response direction (beta = 0.95
+declared); events are channel responses to a declared protocol step.
+B02 upgrades B01 from detection to localization: B01 says the
+single-chart contract is broken; B02's six transverse squares say where
+the response energy that the two-state decoder cannot capture is
+sitting, channel pair by channel pair.
+
+| Rung | Design | Result |
+| --- | --- | --- |
+| B02A | exact T3.1 identity over a 36-event grid | `PASS_CONTROL` (max rel. residual < 1e-12) |
+| B02B | T4.1 ledger closure, beta = 0.95 | `PASS_CONTROL` |
+| B02C | clean aligned event | transverse share < 1e-12, captured share = beta |
+| B02D | contamination localization | model drifts (Tm aging, cooling branch, m-value): dominant pair 23; instrument thermal-readout gain: dominant pair 34 |
+
+Honest finding recorded in the certificate: the three model-level
+drifts share one transverse fingerprint because they all act through
+the stability scalar — localization discriminates contamination
+CLASSES (model-side vs instrument-side), not individual model drifts.
+Certificate: `results/B02_CERTIFICATE.json` (pinned; CI diffs it).
+
 ## Next rung — B01E experimental (open)
 
 Data contract for the first real-data rung, declared before any data is
