@@ -1,0 +1,70 @@
+{
+  "B01A_COMMON_GRADIENT_CONTROL": {
+    "note": "Six brackets from one shared gradient pair: P(B)=0 is an algebraic identity here; implementation control only.",
+    "raw_residual": 8.470329472543003e-22,
+    "status": "PASS_CONTROL"
+  },
+  "B01B_CLEAN_INDEPENDENT_SLOTS": {
+    "noise_standard_error": 2.7401064047663105e-08,
+    "raw_residual": 8.470329472543003e-22,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": 3.091241076554249e-14
+  },
+  "B01C_BATCH_AGING_LARGE": {
+    "aging_amplitude_K": 2.0,
+    "bootstrap": {
+      "n_draws": 2000,
+      "p999_interval": [
+        -3.7360868514581425e-07,
+        -1.7198349638656737e-07
+      ],
+      "zero_inside_99p9": false
+    },
+    "noise_standard_error": 3.581697353706829e-08,
+    "raw_residual": -2.775700200563514e-07,
+    "rejection_threshold": 5.0,
+    "status": "FALSIFIED_MEASUREMENT_CONTRACT",
+    "z_score": -7.7496782292083966
+  },
+  "B01C_BATCH_AGING_SMALL": {
+    "aging_amplitude_K": 0.01,
+    "noise_standard_error": 2.7442383263430163e-08,
+    "raw_residual": -9.54968696466899e-10,
+    "rejection_threshold": 5.0,
+    "status": "NOT_FALSIFIED",
+    "z_score": -0.034799043774725445
+  },
+  "B01D_HYSTERESIS_BRANCH_MIX": {
+    "bootstrap": {
+      "n_draws": 2000,
+      "p999_interval": [
+        1.9627130964735677e-07,
+        3.030873132111259e-07
+      ],
+      "zero_inside_99p9": false
+    },
+    "branch_Tm_shift_K": 2.5,
+    "noise_standard_error": 1.6692157220306796e-08,
+    "raw_residual": 2.4613997551066533e-07,
+    "rejection_threshold": 5.0,
+    "status": "FALSIFIED_MEASUREMENT_CONTRACT",
+    "z_score": 14.745845744325033
+  },
+  "_meta": {
+    "audit_discipline": "Thermodynamics-Reproducibility campaign T01",
+    "channel_noise_sigma": 0.0001,
+    "chart": "(T, c): temperature x chemical control coordinate",
+    "chart_point": {
+      "T_K": 330.0,
+      "c_M": 1.5
+    },
+    "framework_source": "arXiv:2603.20773 rank-2 area-bracket theorem",
+    "replicate_averages": 25,
+    "stencil": {
+      "dT_K": 0.5,
+      "dc_M": 0.1
+    }
+  },
+  "_pin": "64afab8cb29ee5d99d6983eef765c5fb94ec526005c0fc8ff5f94f3d84fac9a6"
+}
