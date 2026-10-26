@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "repository": "Parveen117/Bio-tech",
+  "recorded_at_utc": "2026-10-26T14:24:22.218045+00:00",
+  "scope": "Default-branch content immediately before the 2026-10-26 provenance update.",
+  "baseline_branch": "main",
+  "baseline_commit": "12adfe0f1da26cc4ce992837df003928e1a49217",
+  "baseline_tree": "a6474392e7084877fb9ca0a6fefc2113df8d577f",
+  "baseline_commit_url": "https://github.com/Parveen117/Bio-tech/commit/12adfe0f1da26cc4ce992837df003928e1a49217",
+  "git_object_hash_algorithm": "sha1",
+  "content_hash_algorithm": "sha256",
+  "limits": [
+    "Git timestamps are metadata, not independent trusted timestamps.",
+    "This manifest excludes its own later provenance update.",
+    "A prior DOI covers its archived version, not later commits.",
+    "Hashes establish content identity, not scientific validity, authorship adjudication, or legal priority."
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "9ca1878c98b02e3fb3ae2946dcc5201d756f62a9",
+      "size_bytes": 590,
+      "sha256": "ba651ce298830b1afb174e5eb9b464e6c783619dff0db2d69b8ffe58803f52fe"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+      "size_bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "e30e27a3d3f5878e7ae2ad93938902738e77be18",
+      "size_bytes": 6944,
+      "sha256": "0922bebc665569308dca00c2d63bf138da2e7f08b0c284345143e73326dcf69d"
+    },
+    {
+      "path": "campaigns/B01_PLUCKER_BIO_RESPONSE/b01_core.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "5b192143bff182ac09e3e253e15ad3d5ef1a021c",
+      "size_bytes": 6750,
+      "sha256": "02398e748826600946d3d603980b19e3e08e553658505f3ec09fd5801588453b"
+    },
+    {
+      "path": "campaigns/B01_PLUCKER_BIO_RESPONSE/run_b01.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "ed96d8d7bb036e79598578c29d0314b482d732b2",
+      "size_bytes": 5314,
+      "sha256": "979684583897c65412f5ea6169e111ba30a2cff649a2a0e4add3cd5ea9bd8b8d"
+    },
+    {
+      "path": "campaigns/B02_CUT_SQUARE_RESPONSE/b02_core.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "2a5b87a73b1cbc63e307cbe17e4f9b29576241e0",
+      "size_bytes": 4501,
+      "sha256": "8f15a888e745f9496c719cb389182caa17b2c260f27d68a2c7d62082be9b324d"
+    },
+    {
+      "path": "campaigns/B02_CUT_SQUARE_RESPONSE/run_b02.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "00db85b0b4ceec2fa9ab6e6547a0609d6b292253",
+      "size_bytes": 5541,
+      "sha256": "90ddc775c326f0a6a8f55306695462e3183c6a0ffaf0fe8237a2efb035575cdb"
+    },
+    {
+      "path": "results/B01_CERTIFICATE.json",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "fb16701044436f4970b06154fce0398d56d3cc5d",
+      "size_bytes": 2144,
+      "sha256": "f8e25a6c13b8a6eb3528534c2d082e3de6c1b9024c4bf283f96d25908885ad81"
+    },
+    {
+      "path": "results/B02_CERTIFICATE.json",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "31867cc9749e437d98ea6957f4c47684ed556718",
+      "size_bytes": 3585,
+      "sha256": "59c259d5903dcecc000f4a2375385b144fb7bf5d7011c6782585146b4763ffd5"
+    },
+    {
+      "path": "tests/test_b01.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "1f21a1d0ebbe76e9c4a13398e2a719f11d78c914",
+      "size_bytes": 2790,
+      "sha256": "c0b8c2193a8d9d79b1df4fbb2d9e781c1352a0bc0842ed76c96f2abda5d9b4a4"
+    },
+    {
+      "path": "tests/test_b02.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "1ffbfcec3811d735dca9794a6c00a61283df4dec",
+      "size_bytes": 2562,
+      "sha256": "0bf5be522608847d9901757547b3848ab6e63b8f7099142bcedc53b09692f4fe"
+    }
+  ],
+  "published_releases": [],
+  "zenodo_archive": null
+}

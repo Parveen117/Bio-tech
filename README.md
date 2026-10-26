@@ -1,5 +1,8 @@
 # Bio-tech
 
+> **Research record:** [Dated snapshot, content hashes and archive links](RESEARCH_PROVENANCE.md) · [Canonical repository governance](GOVERNANCE.md). Cite the exact version used.
+
+
 Biothermodynamic falsification campaigns built on the rank-2 area-bracket
 theorem of **Geometric Completion of Thermodynamic Response**
 (arXiv:2603.20773) and the audit discipline of the
